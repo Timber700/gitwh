@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>乙源的第一个表单网页</title>
+	<style>
+	table
+	{
+		border-collapse:collapse;
+	}
+	table,td,th
+	{
+		<!--border: 1px solid black-->;
+		border-left:2px solid black;
+		border-right:2px solid black;
+		border-top:2px solid black;
+		border-bottom:2px solid black;
+	}
+	table
+	{
+		width:100%;
+	}
+	th
+	{	
+		height:50px;
+	}
+	td
+	{
+		padding:15px;
+	}
+	</style>
+</head>
+
+<body>
+
+<table>
+	<tr>
+		<th align="left" colspan="3">1.姓名和联系方式</th>
+	</tr>
+
+	<tr>
+		<td align="right">真实姓名：</td>
+		<td>
+			<form>
+				<input type="text">*
+			</form>
+		</td>
+		<td>
+			<form>
+				<input type="radio" name="sex" value="male">男
+				<input type="radio" name="sex" value="female">女
+			</form>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">电子邮箱：</td>
+		<td>
+			<form>
+				<input type="text">*
+			</form>
+		</td>
+		<td>
+			<b>非常重要!</b>
+			</br>
+			这是本工作室与您联系的首选方式哦，请填写真实。
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">电话：</td>
+		<td>
+			<form>
+				<input type="text">*
+			</form>
+		</td>
+		<td>
+			电话为必须填写项。
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">所实习部门：</td>
+		<td  colspan="2">
+			<form action="">
+				<select name="部门">
+					<option value="易千工作室">易千工作室</option>
+					<option value="研发">研发</option>
+					<option value="设计">设计</option>
+					<option value="运营">运营</option>
+					<option value="内容">内容</option>
+				</select>
+			</form>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">实习岗位：</td>
+		<td>
+			<form>
+				<input type="text">*
+			</form>
+		</td>
+		<td>
+			研发部岗位：前端/后端/运营。
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">手机号码：</td>
+		<td>
+			<form>
+				<input type="text">
+			</form>
+		</td>
+		<td rowspan="3">
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">邮箱：</td>
+		<td>
+			<form>
+				<input type="text">
+			</form>
+		</td>
+	</tr>
+
+	<tr>
+		<td align="right">性别取向：</td>
+		<td>
+			<form>
+				<input type="text">
+			</form>
+		</td>
+	</tr>
+</table>
+
+</body>
+</html>
